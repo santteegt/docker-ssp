@@ -1,0 +1,25 @@
+version: '2.1'
+
+services:
+
+  postgresssp:
+    hostname: postgresssp
+    image: postgres:9.5-alpine
+    environment:
+      POSTGRES_USER: sspadmin
+      POSTGRES_PASSWORD: sspadmin
+      POSTGRES_DB: ssp
+    ports:
+      - "5432:5432"
+
+  ssp:
+    build: ./ssp/
+    ports:
+      - "8080:8080"
+    links:
+      - postgresssp
+    depends_on:
+      - postgresssp
+    command: ["/usr/local/bin/ssp-entrypoint.sh", "postgresssp", "5432"]
+
+

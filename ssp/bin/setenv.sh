@@ -1,0 +1,1 @@
+CATALINA_OPTS=-Xms2G -Xmx2G -XX:PermSize=256m -XX:MaxPermSize=256m
