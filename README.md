@@ -24,7 +24,7 @@ $ docker logs dockerssp_ssp
 
 ## How to customise installation?
 
-* See the full documentation on how to setup the config files included in the [ssp/ssp-local](ssp/ssp-local) directory
+* See the full documentation [here](https://wiki.jasig.org/display/SSP/Home) on how to setup the config files included in the [ssp/ssp-local](ssp/ssp-local) directory
 * For custom Apache Tomcat configuration, you can edit the files included in the [ssp/conf](ssp/conf) directory
 
 ## Licence
