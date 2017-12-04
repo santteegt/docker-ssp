@@ -29,4 +29,4 @@ $ docker logs dockerssp_ssp
 
 ## Licence
 
-This project is published under the [LICENSE](Apache Licence 2.0)
+This project is published under the [Apache Licence 2.0](LICENSE)
